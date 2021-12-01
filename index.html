@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>drag/drop</title>
+  </head>
+  <body>
+    <div>
+      <div class="row">
+          <div class="col-header start">0</div>
+          <div class="col-header progress">1</div>
+          <div class="col-header done">2</div>
+      </div>
+
+      <div class="row">
+        <div class="placeholder"
+             data-active-class="start">
+          <div class="item start" 
+          draggable="true">Block</div>
+        </div>
+        <div class="placeholder" 
+             data-active-class="progress">
+      </div>
+        <div class="placeholder"
+             data-active-class="done">
+        </div>
+      </div>
+      
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
